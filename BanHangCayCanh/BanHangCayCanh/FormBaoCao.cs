@@ -25,7 +25,7 @@ namespace BanHangCayCanh
 
         private void FormBaoCao_Load(object sender, EventArgs e)
         {
-            
+            cbbLoaiBaoCao.SelectedIndex = 0;
         }
 
         private void LoadReport(DataTable dt, string reportPath)
@@ -64,6 +64,9 @@ namespace BanHangCayCanh
             string path = "";
             switch (cbbLoaiBaoCao.Text)
             {
+                case "Cây cảnh": dt = Data.GetDataToTable("Select * from CayCanh");
+                    path = "D:\\CDUD\\chuyendeungdung\\BanHangCayCanh\\BanHangCayCanh\\Reports\\RPCayCanh.rpt";
+                    break;  
                 case "Loại cây cảnh": dt = Data.GetDataToTable("Select * from LoaiCay");
                     path = "D:\\CDUD\\chuyendeungdung\\BanHangCayCanh\\BanHangCayCanh\\Reports\\RPLoaiCayCanh.rpt"; break;
             }
