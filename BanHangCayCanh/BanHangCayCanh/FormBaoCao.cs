@@ -61,14 +61,25 @@ namespace BanHangCayCanh
         private void cbbLoaiBaoCao_SelectedIndexChanged(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            string path = "";
+            string path = "D:\\CDUD\\chuyendeungdung\\BanHangCayCanh\\BanHangCayCanh\\Reports\\";
             switch (cbbLoaiBaoCao.Text)
             {
-                case "Cây cảnh": dt = Data.GetDataToTable("Select * from CayCanh");
-                    path = "D:\\CDUD\\chuyendeungdung\\BanHangCayCanh\\BanHangCayCanh\\Reports\\RPCayCanh.rpt";
-                    break;  
-                case "Loại cây cảnh": dt = Data.GetDataToTable("Select * from LoaiCay");
-                    path = "D:\\CDUD\\chuyendeungdung\\BanHangCayCanh\\BanHangCayCanh\\Reports\\RPLoaiCayCanh.rpt"; break;
+                case "Cây cảnh": 
+                    dt = Data.GetDataToTable("Select * from CayCanh");
+                    path += "RPCayCanh.rpt";
+                    break;
+                case "Khách hàng":
+                    dt = Data.GetDataToTable("Select * from KhachHang");
+                    path += "RPKhachHang.rpt";
+                    break;
+                case "Nhân viên":
+                    dt = Data.GetDataToTable("Select * from NhanVien");
+                    path += "RPNhanVien.rpt";
+                    break;
+                case "Loại cây cảnh": 
+                    dt = Data.GetDataToTable("Select * from LoaiCay");
+                    path += "RPLoaiCayCanh.rpt"; 
+                    break;
             }
             LoadReport(dt, path);
         }
