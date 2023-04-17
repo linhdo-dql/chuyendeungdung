@@ -59,6 +59,7 @@ namespace BanHangCayCanh
             txtSDT.Text = "";
             rtxtDiaChi.Text = "";
             btnHuyTimKiem.Visible = false;
+            currentIdKhachHang = "";
             titleTable.Text = "Danh sách khách hàng";
         }
 
@@ -176,6 +177,12 @@ namespace BanHangCayCanh
         private void FormKhachHang_FormClosed(object sender, FormClosedEventArgs e)
         {
             new FormMain().Show();
+        }
+
+        private void btnXuatDSKhachHang_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new FormBaoCao(2).Show();
         }
     }
 }

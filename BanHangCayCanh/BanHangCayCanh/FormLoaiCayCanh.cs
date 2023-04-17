@@ -323,5 +323,10 @@ namespace BanHangCayCanh
             new FormMain().Show();
         }
 
+        private void btnXuatDSLoaiCayCanh_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new FormBaoCao(4).Show();
+        }
     }
 }

@@ -50,7 +50,7 @@ namespace BanHangCayCanh
             try
             {
                 //Load your file path here
-                string path = "D:\\ChuyenDe\\BanHangCayCanh\\BanHangCayCanh\\App.config";
+                string path = "D:\\CDUD\\chuyendeungdung\\BanHangCayCanh\\BanHangCayCanh\\App.config";
                 ExeConfigurationFileMap configFileMap = new ExeConfigurationFileMap();
                 configFileMap.ExeConfigFilename = path;
                 System.Configuration.Configuration config = ConfigurationManager.OpenMappedExeConfiguration(configFileMap, ConfigurationUserLevel.None);

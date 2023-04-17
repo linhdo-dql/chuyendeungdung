@@ -280,6 +280,8 @@ namespace BanHangCayCanh
 
         private void ResetDialog()
         {
+            titleTable.Text = "Danh sách hóa đơn";
+            btnHuyTimKiem.Visible = false;
             dgvCTHD.ClearSelection();
             ResetFormSP();
             panelSanPham.Visible = false;
@@ -662,7 +664,8 @@ namespace BanHangCayCanh
         }
 
         private void btnHuyTimKiem_Click(object sender, EventArgs e)
-        {
+        {   
+            ResetDialog();
             LoadDataGridViewBill();
         }
 
@@ -684,6 +687,12 @@ namespace BanHangCayCanh
             this.Hide();
             FormPrint formPrint = new FormPrint(currentIdHD);
             formPrint.ShowDialog();
+        }
+
+        private void btnXuatDSHoaDon_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new FormBaoCao(1).Show();
         }
     }
 }

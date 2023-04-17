@@ -228,6 +228,7 @@
       <DependentUpon>RPNhanVien.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Settings.cs" />
     <EmbeddedResource Include="DialogAddBill.resx">
       <DependentUpon>DialogAddBill.cs</DependentUpon>
     </EmbeddedResource>

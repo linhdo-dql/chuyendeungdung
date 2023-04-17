@@ -115,6 +115,9 @@ namespace BanHangCayCanh
             dr.Cells["donGia"].Value = dt.Rows[0]["gia"];
             dr.Cells["tenCay"].Value = dt.Rows[0]["tenCay"];
             dr.Cells["thanhTien"].Value = float.Parse(dt.Rows[0]["gia"].ToString());
+            //
+            dr.Cells["anhCay"].Value = dt.Rows[0]["anh"];
+            //
         }
 
         private void LoadCBBItems()
@@ -179,6 +182,10 @@ namespace BanHangCayCanh
             nudSoLuong.Value = int.Parse(dgvCTHD.CurrentRow.Cells["soLuong"].Value.ToString());
             txtGiaBan.Text = dgvCTHD.CurrentRow.Cells["donGia"].Value.ToString();
             txtThanhTien.Text = (int.Parse(nudSoLuong.Value.ToString()) * float.Parse(txtGiaBan.Text)) + "";
+            //
+            picAnhCayCanh.BackgroundImageLayout = ImageLayout.Zoom;
+            picAnhCayCanh.BackgroundImage = Image.FromFile(dgvCTHD.CurrentRow.Cells["anhCay"].Value.ToString());
+            //
             btnXoaSP.Visible = true;
             btnSuaSP.Visible = true;
             btnThemSP.Visible = false;
@@ -196,6 +203,8 @@ namespace BanHangCayCanh
                     dgvCTHD.Rows[i].Cells["soLuong"].Value = nudSoLuong.Value;
                     dgvCTHD.Rows[i].Cells["donGia"].Value = txtGiaBan.Text;
                     dgvCTHD.Rows[i].Cells["thanhTien"].Value = txtThanhTien.Text;
+                    //
+                    dgvCTHD.Rows[i].Cells["anhCay"].Value = Data.GetPropertiesById("CayCanh", "idCayCanh", cbbTenCay.SelectedValue.ToString()).Rows[0]["anh"];
                     break;
                 }
             }
@@ -299,6 +308,7 @@ namespace BanHangCayCanh
                 DataTable dt = Data.GetPropertiesById("CayCanh", "idCayCanh", (sender as ComboBox).SelectedValue.ToString());
                 txtGiaBan.Text = dt.Rows[0]["gia"].ToString();
                 txtThanhTien.Text = (int.Parse(nudSoLuong.Value.ToString()) * float.Parse(txtGiaBan.Text)) + "";
+                picAnhCayCanh.BackgroundImage = Image.FromFile(dt.Rows[0]["anh"].ToString());
             }
         }
 
@@ -514,6 +524,13 @@ namespace BanHangCayCanh
                 }
             }
         }
+
+        private void dgvCTHD_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        
     }
 
 }

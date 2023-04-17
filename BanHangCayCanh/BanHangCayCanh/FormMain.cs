@@ -190,12 +190,12 @@ namespace BanHangCayCanh
             return true;
         }
 
-        private void FormMain_Load(object sender, EventArgs e)
+        private void FormMain_Load(object sender, EventArgs e) 
         {
+            LoadComboboxMaNV();
             if (ConfigurationManager.AppSettings.Get("SaveLogined") == "1")
             {
-                panelTaoTaiKhoan.Visible = false;
-                panelDangNhap.Visible = false;
+                panelTaiKhoan.Visible = false;
                 menuStrip1.Visible = true;
                 menuTK.Text = "Tài khoản: " + ConfigurationManager.AppSettings.Get("AccountSaved");
             }
@@ -203,7 +203,7 @@ namespace BanHangCayCanh
             {
                 panelTaoTaiKhoan.SendToBack();
                 panelDangNhap.BringToFront();
-                LoadComboboxMaNV();
+               
             }
         }
 
@@ -211,8 +211,8 @@ namespace BanHangCayCanh
         {
             Common.AddUpdateAppSettings("SaveLogined", "0");
             Common.AddUpdateAppSettings("AccountSaved", "");
-            panelTaiKhoan.Visible = true;
             menuStrip1.Visible = false;
+            panelTaiKhoan.Visible = true;
             ResetFormTaiKhoan();
         }
 

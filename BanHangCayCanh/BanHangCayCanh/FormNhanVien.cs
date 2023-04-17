@@ -65,6 +65,7 @@ namespace BanHangCayCanh
             txtSDT.Text = "";
             rtxtDiaChi.Text = "";
             btnHuyTimKiem.Visible = false;
+            currentIdNhanVien = "";
             titleTable.Text = "Danh sách nhân viên";
         }
 
@@ -186,6 +187,12 @@ namespace BanHangCayCanh
         private void FormNhanVien_FormClosed(object sender, FormClosedEventArgs e)
         {
             new FormMain().Show();
+        }
+
+        private void btnXuatDSNhanVien_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new FormBaoCao(3).Show();
         }
     }
 }

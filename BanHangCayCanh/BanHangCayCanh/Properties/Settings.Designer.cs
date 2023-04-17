@@ -48,7 +48,7 @@ namespace BanHangCayCanh.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("\"\"")]
         public string AccountSaved {
             get {
                 return ((string)(this["AccountSaved"]));

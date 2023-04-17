@@ -16,16 +16,21 @@ using System.Windows.Forms;
 namespace BanHangCayCanh
 {
     public partial class FormBaoCao : Form
-    {
+    {   
+        private int _index = 0;
         public FormBaoCao()
         {
             InitializeComponent();
         }
-        
 
-        private void FormBaoCao_Load(object sender, EventArgs e)
+        public FormBaoCao(int index)
         {
-            cbbLoaiBaoCao.SelectedIndex = 0;
+            InitializeComponent();
+            _index = index;
+        }
+        private void FormBaoCao_Load(object sender, EventArgs e)
+        {   
+            cbbLoaiBaoCao.SelectedIndex = _index;
         }
 
         private void LoadReport(DataTable dt, string reportPath)

@@ -55,7 +55,7 @@ namespace BanHangCayCanh
             this.panel9 = new System.Windows.Forms.Panel();
             this.txtSoLuongDaChon = new System.Windows.Forms.Label();
             this.btnTaoHoaDon = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnXuatDSCayCanh = new System.Windows.Forms.Button();
             this.titleTable = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btnXoa = new System.Windows.Forms.Label();
@@ -296,7 +296,7 @@ namespace BanHangCayCanh
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel9.Controls.Add(this.txtSoLuongDaChon);
             this.panel9.Controls.Add(this.btnTaoHoaDon);
-            this.panel9.Controls.Add(this.button1);
+            this.panel9.Controls.Add(this.btnXuatDSCayCanh);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel9.Location = new System.Drawing.Point(11, 842);
             this.panel9.Name = "panel9";
@@ -334,19 +334,20 @@ namespace BanHangCayCanh
             this.btnTaoHoaDon.UseVisualStyleBackColor = true;
             this.btnTaoHoaDon.Click += new System.EventHandler(this.btnTaoHoaDon_Click);
             // 
-            // button1
+            // btnXuatDSCayCanh
             // 
-            this.button1.Image = global::BanHangCayCanh.Properties.Resources.print;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(14, 13);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.button1.Size = new System.Drawing.Size(160, 41);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Xuất danh sách";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnXuatDSCayCanh.Image = global::BanHangCayCanh.Properties.Resources.print;
+            this.btnXuatDSCayCanh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXuatDSCayCanh.Location = new System.Drawing.Point(14, 13);
+            this.btnXuatDSCayCanh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnXuatDSCayCanh.Name = "btnXuatDSCayCanh";
+            this.btnXuatDSCayCanh.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.btnXuatDSCayCanh.Size = new System.Drawing.Size(160, 41);
+            this.btnXuatDSCayCanh.TabIndex = 12;
+            this.btnXuatDSCayCanh.Text = "Xuất danh sách";
+            this.btnXuatDSCayCanh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnXuatDSCayCanh.UseVisualStyleBackColor = true;
+            this.btnXuatDSCayCanh.Click += new System.EventHandler(this.btnXuatDSCayCanh_Click);
             // 
             // titleTable
             // 
@@ -834,7 +835,7 @@ namespace BanHangCayCanh
         private DataGridView dgvCayCanh;
         private Panel panel9;
         private Button btnTaoHoaDon;
-        private Button button1;
+        private Button btnXuatDSCayCanh;
         private Panel panel5;
         private Button btnSua;
         private Button btnThem;

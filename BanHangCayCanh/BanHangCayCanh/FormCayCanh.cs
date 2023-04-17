@@ -448,5 +448,11 @@ namespace BanHangCayCanh
                 MessageBox.Show("Bạn chưa chọn cây cảnh nào", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void btnXuatDSCayCanh_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new FormBaoCao(0).Show();
+        }
     }
 }

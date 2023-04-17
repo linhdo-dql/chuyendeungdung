@@ -69,6 +69,8 @@
             this.diaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.selected = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.delete = new System.Windows.Forms.DataGridViewImageColumn();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.btnXuatDSNhanVien = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -77,6 +79,7 @@
             this.panel6.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
+            this.panel9.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel3
@@ -419,6 +422,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.panel9);
             this.panel1.Controls.Add(this.dgvNhanVien);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 90);
@@ -540,6 +544,32 @@
             this.delete.Visible = false;
             this.delete.Width = 125;
             // 
+            // panel9
+            // 
+            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel9.Controls.Add(this.btnXuatDSNhanVien);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel9.Location = new System.Drawing.Point(11, 838);
+            this.panel9.Name = "panel9";
+            this.panel9.Padding = new System.Windows.Forms.Padding(13, 10, 13, 10);
+            this.panel9.Size = new System.Drawing.Size(1054, 65);
+            this.panel9.TabIndex = 15;
+            // 
+            // btnXuatDSNhanVien
+            // 
+            this.btnXuatDSNhanVien.Image = global::BanHangCayCanh.Properties.Resources.print;
+            this.btnXuatDSNhanVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXuatDSNhanVien.Location = new System.Drawing.Point(14, 13);
+            this.btnXuatDSNhanVien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnXuatDSNhanVien.Name = "btnXuatDSNhanVien";
+            this.btnXuatDSNhanVien.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.btnXuatDSNhanVien.Size = new System.Drawing.Size(160, 41);
+            this.btnXuatDSNhanVien.TabIndex = 12;
+            this.btnXuatDSNhanVien.Text = "Xuất danh sách";
+            this.btnXuatDSNhanVien.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnXuatDSNhanVien.UseVisualStyleBackColor = true;
+            this.btnXuatDSNhanVien.Click += new System.EventHandler(this.btnXuatDSNhanVien_Click);
+            // 
             // FormNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -565,6 +595,7 @@
             this.panel6.PerformLayout();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).EndInit();
+            this.panel9.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -609,5 +640,7 @@
         private System.Windows.Forms.DataGridViewCheckBoxColumn selected;
         private System.Windows.Forms.DataGridViewImageColumn delete;
         private System.Windows.Forms.DateTimePicker txtTuoi;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Button btnXuatDSNhanVien;
     }
 }
