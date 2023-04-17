@@ -85,6 +85,8 @@ namespace BanHangCayCanh
             this.dtpNgayLap = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.lbIDHoaDon = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.cbbTrangThai = new System.Windows.Forms.ComboBox();
@@ -101,7 +103,7 @@ namespace BanHangCayCanh
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnDatLaiDon = new System.Windows.Forms.Button();
             this.btnResetFormHoaDon = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnInHD = new System.Windows.Forms.Button();
             this.btnCapNhat = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -126,8 +128,6 @@ namespace BanHangCayCanh
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.txtTimkiem = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.lbIDHoaDon = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.panelThongTinHoaDon.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -140,6 +140,7 @@ namespace BanHangCayCanh
             this.panelKhachHang.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel11.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel15.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -150,7 +151,6 @@ namespace BanHangCayCanh
             this.panel13.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel10.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelThongTinHoaDon
@@ -739,6 +739,29 @@ namespace BanHangCayCanh
             this.label15.TabIndex = 12;
             this.label15.Text = "Nhân viên:";
             // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.lbIDHoaDon);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(0, 0);
+            this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel7.Name = "panel7";
+            this.panel7.Padding = new System.Windows.Forms.Padding(5);
+            this.panel7.Size = new System.Drawing.Size(681, 34);
+            this.panel7.TabIndex = 6;
+            // 
+            // lbIDHoaDon
+            // 
+            this.lbIDHoaDon.AutoSize = true;
+            this.lbIDHoaDon.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbIDHoaDon.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.lbIDHoaDon.Location = new System.Drawing.Point(5, 5);
+            this.lbIDHoaDon.Name = "lbIDHoaDon";
+            this.lbIDHoaDon.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.lbIDHoaDon.Size = new System.Drawing.Size(143, 20);
+            this.lbIDHoaDon.TabIndex = 0;
+            this.lbIDHoaDon.Text = "Thông tin hóa đơn";
+            // 
             // panel9
             // 
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -900,7 +923,7 @@ namespace BanHangCayCanh
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.btnDatLaiDon);
             this.panel5.Controls.Add(this.btnResetFormHoaDon);
-            this.panel5.Controls.Add(this.button5);
+            this.panel5.Controls.Add(this.btnInHD);
             this.panel5.Controls.Add(this.btnCapNhat);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel5.Location = new System.Drawing.Point(0, 929);
@@ -941,20 +964,21 @@ namespace BanHangCayCanh
             this.btnResetFormHoaDon.UseVisualStyleBackColor = true;
             this.btnResetFormHoaDon.Click += new System.EventHandler(this.btnResetFormHoaDon_Click);
             // 
-            // button5
+            // btnInHD
             // 
-            this.button5.Image = global::BanHangCayCanh.Properties.Resources.bill;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(521, 6);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button5.MaximumSize = new System.Drawing.Size(149, 42);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.button5.Size = new System.Drawing.Size(149, 42);
-            this.button5.TabIndex = 24;
-            this.button5.Text = "In hóa đơn";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnInHD.Image = global::BanHangCayCanh.Properties.Resources.bill;
+            this.btnInHD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInHD.Location = new System.Drawing.Point(521, 6);
+            this.btnInHD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnInHD.MaximumSize = new System.Drawing.Size(149, 42);
+            this.btnInHD.Name = "btnInHD";
+            this.btnInHD.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.btnInHD.Size = new System.Drawing.Size(149, 42);
+            this.btnInHD.TabIndex = 24;
+            this.btnInHD.Text = "In hóa đơn";
+            this.btnInHD.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnInHD.UseVisualStyleBackColor = true;
+            this.btnInHD.Click += new System.EventHandler(this.btnInHD_Click);
             // 
             // btnCapNhat
             // 
@@ -1276,29 +1300,6 @@ namespace BanHangCayCanh
             this.label1.TabIndex = 8;
             this.label1.Text = "Nội dung tìm kiếm:";
             // 
-            // lbIDHoaDon
-            // 
-            this.lbIDHoaDon.AutoSize = true;
-            this.lbIDHoaDon.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbIDHoaDon.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.lbIDHoaDon.Location = new System.Drawing.Point(5, 5);
-            this.lbIDHoaDon.Name = "lbIDHoaDon";
-            this.lbIDHoaDon.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.lbIDHoaDon.Size = new System.Drawing.Size(143, 20);
-            this.lbIDHoaDon.TabIndex = 0;
-            this.lbIDHoaDon.Text = "Thông tin hóa đơn";
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.lbIDHoaDon);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 0);
-            this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel7.Name = "panel7";
-            this.panel7.Padding = new System.Windows.Forms.Padding(5);
-            this.panel7.Size = new System.Drawing.Size(681, 34);
-            this.panel7.TabIndex = 6;
-            // 
             // FormBanHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1330,6 +1331,8 @@ namespace BanHangCayCanh
             this.panel2.PerformLayout();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.panel15.ResumeLayout(false);
@@ -1345,8 +1348,6 @@ namespace BanHangCayCanh
             this.panel6.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1360,7 +1361,7 @@ namespace BanHangCayCanh
         private Label txtTongTien;
         private Label label13;
         private Panel panel5;
-        private Button button5;
+        private Button btnInHD;
         private Button btnCapNhat;
         private Button btnTaoHoaDon;
         private Label txtGiaCay;

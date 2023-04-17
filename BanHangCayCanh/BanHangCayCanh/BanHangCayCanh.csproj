@@ -118,10 +118,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DSNhanVien.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DataSets\HoaDon.Designer.cs">
+    <Compile Include="DataSets\HoaDonBanHang.cs">
+      <DependentUpon>HoaDonBanHang.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\HoaDonBanHang.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>HoaDon.xsd</DependentUpon>
+      <DependentUpon>HoaDonBanHang.xsd</DependentUpon>
     </Compile>
     <Compile Include="DialogAddBill.cs">
       <SubType>Form</SubType>
@@ -189,10 +192,22 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Reports\HoaDonBanHang.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HoaDonBanHang.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Reports\RPCayCanh.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>RPCayCanh.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\RPHoaDon.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPHoaDon.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Reports\RPKhachHang.cs">
@@ -244,9 +259,17 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\HoaDonBanHang.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>HoaDonBanHang.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\RPCayCanh.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>RPCayCanh.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\RPHoaDon.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPHoaDon.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\RPKhachHang.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -308,17 +331,6 @@
     <None Include="DataSets\DSNhanVien.xss">
       <DependentUpon>DSNhanVien.xsd</DependentUpon>
     </None>
-    <None Include="DataSets\HoaDon.xsc">
-      <DependentUpon>HoaDon.xsd</DependentUpon>
-    </None>
-    <None Include="DataSets\HoaDon.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>HoaDon.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="DataSets\HoaDon.xss">
-      <DependentUpon>HoaDon.xsd</DependentUpon>
-    </None>
     <None Include="DataSets\DSHoaDon.xsc">
       <DependentUpon>DSHoaDon.xsd</DependentUpon>
     </None>
@@ -329,6 +341,17 @@
     </None>
     <None Include="DataSets\DSHoaDon.xss">
       <DependentUpon>DSHoaDon.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\HoaDonBanHang.xsc">
+      <DependentUpon>HoaDonBanHang.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\HoaDonBanHang.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HoaDonBanHang.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSets\HoaDonBanHang.xss">
+      <DependentUpon>HoaDonBanHang.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

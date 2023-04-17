@@ -678,5 +678,12 @@ namespace BanHangCayCanh
             }
             ResetTongTien();
         }
+
+        private void btnInHD_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormPrint formPrint = new FormPrint(currentIdHD);
+            formPrint.ShowDialog();
+        }
     }
 }

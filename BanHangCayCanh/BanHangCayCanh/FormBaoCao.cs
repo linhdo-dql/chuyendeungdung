@@ -68,6 +68,10 @@ namespace BanHangCayCanh
                     dt = Data.GetDataToTable("Select * from CayCanh");
                     path += "RPCayCanh.rpt";
                     break;
+                case "Hóa đơn":
+                    dt = Data.GetDataToTable("Select * from HoaDon");
+                    path += "RPHoaDon.rpt";
+                    break;
                 case "Khách hàng":
                     dt = Data.GetDataToTable("Select * from KhachHang");
                     path += "RPKhachHang.rpt";
