@@ -1,8 +1,10 @@
 ﻿
 using CrystalDecisions.CrystalReports.Engine;
+using CrystalDecisions.Shared;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -29,7 +31,8 @@ namespace BanHangCayCanh
         private void LoadReport(DataTable dt, string reportPath)
         {
             ReportDocument report = new ReportDocument();
-
+            
+            
             try
             {
                 // Load the report file into the ReportDocument object
@@ -42,6 +45,9 @@ namespace BanHangCayCanh
             DataSet ds = new DataSet();
             ds.Tables.Add(dt);
             report.SetDataSource(ds.Tables[0]);
+            string tenNV = Data.GetPropertiesById("NhanVien", "idNhanVien", ConfigurationManager.AppSettings["AccountSaved"].ToString()).Rows[0]["tenNV"].ToString();
+            report.SetParameterValue("nguoiLap", tenNV);
+            report.SetParameterValue("ngayLap", "Ngày lập: " + DateTime.Now.ToString("dd/MM/yyyy"));
             reportViewer.ReportSource = report;
             reportViewer.Refresh();
         }
@@ -59,7 +65,7 @@ namespace BanHangCayCanh
             switch (cbbLoaiBaoCao.Text)
             {
                 case "Loại cây cảnh": dt = Data.GetDataToTable("Select * from LoaiCay");
-                    path = "D:\\New folder\\BanHangCayCanh\\BanHangCayCanh\\Reports\\RPLoaiCayCanh.rpt"; break;
+                    path = "D:\\CDUD\\chuyendeungdung\\BanHangCayCanh\\BanHangCayCanh\\Reports\\RPLoaiCayCanh.rpt"; break;
             }
             LoadReport(dt, path);
         }

@@ -115,7 +115,7 @@ namespace BanHangCayCanh
             this.panel1.Location = new System.Drawing.Point(0, 90);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(11, 10, 11, 6);
-            this.panel1.Size = new System.Drawing.Size(1227, 765);
+            this.panel1.Size = new System.Drawing.Size(1157, 913);
             this.panel1.TabIndex = 9;
             // 
             // dgvCayCanh
@@ -165,7 +165,7 @@ namespace BanHangCayCanh
             this.dgvCayCanh.RowHeadersWidth = 51;
             this.dgvCayCanh.RowTemplate.Height = 150;
             this.dgvCayCanh.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCayCanh.Size = new System.Drawing.Size(1205, 684);
+            this.dgvCayCanh.Size = new System.Drawing.Size(1135, 832);
             this.dgvCayCanh.TabIndex = 15;
             this.dgvCayCanh.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCayCanh_CellClick);
             this.dgvCayCanh.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCayCanh_CellContentClick);
@@ -298,10 +298,10 @@ namespace BanHangCayCanh
             this.panel9.Controls.Add(this.btnTaoHoaDon);
             this.panel9.Controls.Add(this.button1);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel9.Location = new System.Drawing.Point(11, 694);
+            this.panel9.Location = new System.Drawing.Point(11, 842);
             this.panel9.Name = "panel9";
             this.panel9.Padding = new System.Windows.Forms.Padding(13, 10, 13, 10);
-            this.panel9.Size = new System.Drawing.Size(1205, 65);
+            this.panel9.Size = new System.Drawing.Size(1135, 65);
             this.panel9.TabIndex = 14;
             // 
             // txtSoLuongDaChon
@@ -309,7 +309,7 @@ namespace BanHangCayCanh
             this.txtSoLuongDaChon.AutoSize = true;
             this.txtSoLuongDaChon.Dock = System.Windows.Forms.DockStyle.Right;
             this.txtSoLuongDaChon.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.txtSoLuongDaChon.Location = new System.Drawing.Point(938, 10);
+            this.txtSoLuongDaChon.Location = new System.Drawing.Point(868, 10);
             this.txtSoLuongDaChon.Margin = new System.Windows.Forms.Padding(3, 8, 0, 0);
             this.txtSoLuongDaChon.Name = "txtSoLuongDaChon";
             this.txtSoLuongDaChon.Padding = new System.Windows.Forms.Padding(0, 12, 20, 0);
@@ -322,7 +322,7 @@ namespace BanHangCayCanh
             this.btnTaoHoaDon.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnTaoHoaDon.Image = global::BanHangCayCanh.Properties.Resources.bill;
             this.btnTaoHoaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTaoHoaDon.Location = new System.Drawing.Point(1041, 10);
+            this.btnTaoHoaDon.Location = new System.Drawing.Point(971, 10);
             this.btnTaoHoaDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTaoHoaDon.MaximumSize = new System.Drawing.Size(149, 42);
             this.btnTaoHoaDon.Name = "btnTaoHoaDon";
@@ -366,7 +366,7 @@ namespace BanHangCayCanh
             this.panel6.Location = new System.Drawing.Point(0, 49);
             this.panel6.Name = "panel6";
             this.panel6.Padding = new System.Windows.Forms.Padding(0, 6, 6, 0);
-            this.panel6.Size = new System.Drawing.Size(1227, 41);
+            this.panel6.Size = new System.Drawing.Size(1157, 41);
             this.panel6.TabIndex = 16;
             // 
             // btnXoa
@@ -377,7 +377,7 @@ namespace BanHangCayCanh
             this.btnXoa.ForeColor = System.Drawing.Color.Black;
             this.btnXoa.Image = global::BanHangCayCanh.Properties.Resources.bin;
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(1068, 6);
+            this.btnXoa.Location = new System.Drawing.Point(998, 6);
             this.btnXoa.MinimumSize = new System.Drawing.Size(153, 22);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(153, 22);
@@ -396,7 +396,7 @@ namespace BanHangCayCanh
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1227, 90);
+            this.panel2.Size = new System.Drawing.Size(1157, 90);
             this.panel2.TabIndex = 7;
             // 
             // panel8
@@ -409,7 +409,7 @@ namespace BanHangCayCanh
             this.panel8.Location = new System.Drawing.Point(0, 0);
             this.panel8.Name = "panel8";
             this.panel8.Padding = new System.Windows.Forms.Padding(0, 16, 6, 0);
-            this.panel8.Size = new System.Drawing.Size(1227, 49);
+            this.panel8.Size = new System.Drawing.Size(1157, 49);
             this.panel8.TabIndex = 17;
             // 
             // btnHuyTimKiem
@@ -421,7 +421,7 @@ namespace BanHangCayCanh
             this.btnHuyTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHuyTimKiem.Image = global::BanHangCayCanh.Properties.Resources.clear2;
             this.btnHuyTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHuyTimKiem.Location = new System.Drawing.Point(1078, 16);
+            this.btnHuyTimKiem.Location = new System.Drawing.Point(1008, 16);
             this.btnHuyTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHuyTimKiem.MaximumSize = new System.Drawing.Size(143, 28);
             this.btnHuyTimKiem.MinimumSize = new System.Drawing.Size(143, 28);
@@ -496,7 +496,7 @@ namespace BanHangCayCanh
             this.panel4.Location = new System.Drawing.Point(6, 6);
             this.panel4.Margin = new System.Windows.Forms.Padding(0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(411, 843);
+            this.panel4.Size = new System.Drawing.Size(411, 991);
             this.panel4.TabIndex = 0;
             // 
             // txtKichThuoc
@@ -690,11 +690,11 @@ namespace BanHangCayCanh
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(1227, 0);
+            this.panel3.Location = new System.Drawing.Point(1157, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
             this.panel3.Padding = new System.Windows.Forms.Padding(6);
-            this.panel3.Size = new System.Drawing.Size(423, 855);
+            this.panel3.Size = new System.Drawing.Size(423, 1003);
             this.panel3.TabIndex = 8;
             // 
             // panel5
@@ -704,7 +704,7 @@ namespace BanHangCayCanh
             this.panel5.Controls.Add(this.btnThem);
             this.panel5.Controls.Add(this.btnReset);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(6, 784);
+            this.panel5.Location = new System.Drawing.Point(6, 932);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(411, 65);
             this.panel5.TabIndex = 13;
@@ -770,7 +770,7 @@ namespace BanHangCayCanh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1650, 855);
+            this.ClientSize = new System.Drawing.Size(1580, 1003);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);

@@ -322,5 +322,6 @@ namespace BanHangCayCanh
         {
             new FormMain().Show();
         }
+
     }
 }

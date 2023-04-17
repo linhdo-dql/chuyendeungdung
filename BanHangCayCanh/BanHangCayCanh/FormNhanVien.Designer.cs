@@ -30,6 +30,7 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormNhanVien));
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnXoa = new System.Windows.Forms.Button();
@@ -83,11 +84,11 @@
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(1048, 0);
+            this.panel3.Location = new System.Drawing.Point(1076, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
             this.panel3.Padding = new System.Windows.Forms.Padding(6);
-            this.panel3.Size = new System.Drawing.Size(504, 571);
+            this.panel3.Size = new System.Drawing.Size(504, 1003);
             this.panel3.TabIndex = 9;
             // 
             // panel5
@@ -98,7 +99,7 @@
             this.panel5.Controls.Add(this.btnThem);
             this.panel5.Controls.Add(this.btnReset);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(6, 500);
+            this.panel5.Location = new System.Drawing.Point(6, 932);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(492, 65);
             this.panel5.TabIndex = 13;
@@ -182,7 +183,7 @@
             this.panel4.Location = new System.Drawing.Point(6, 6);
             this.panel4.Margin = new System.Windows.Forms.Padding(0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(492, 559);
+            this.panel4.Size = new System.Drawing.Size(492, 991);
             this.panel4.TabIndex = 0;
             // 
             // txtTuoi
@@ -320,7 +321,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1048, 90);
+            this.panel2.Size = new System.Drawing.Size(1076, 90);
             this.panel2.TabIndex = 10;
             // 
             // panel6
@@ -330,7 +331,7 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel6.Location = new System.Drawing.Point(0, 58);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1048, 32);
+            this.panel6.Size = new System.Drawing.Size(1076, 32);
             this.panel6.TabIndex = 16;
             // 
             // btnXoaAll
@@ -423,7 +424,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 90);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(11, 10, 11, 10);
-            this.panel1.Size = new System.Drawing.Size(1048, 481);
+            this.panel1.Size = new System.Drawing.Size(1076, 913);
             this.panel1.TabIndex = 11;
             // 
             // dgvNhanVien
@@ -470,7 +471,7 @@
             this.dgvNhanVien.RowHeadersWidth = 51;
             this.dgvNhanVien.RowTemplate.Height = 25;
             this.dgvNhanVien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvNhanVien.Size = new System.Drawing.Size(1026, 461);
+            this.dgvNhanVien.Size = new System.Drawing.Size(1054, 893);
             this.dgvNhanVien.TabIndex = 0;
             this.dgvNhanVien.Click += new System.EventHandler(this.dgvNhanVien_Click);
             // 
@@ -543,13 +544,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1552, 571);
+            this.ClientSize = new System.Drawing.Size(1580, 1003);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormNhanVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormNhanVien";
+            this.Text = "Nhân viên";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormNhanVien_FormClosed);
             this.Load += new System.EventHandler(this.FormNhanVien_Load);
             this.panel3.ResumeLayout(false);

@@ -33,423 +33,416 @@ namespace BanHangCayCanh
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLoaiCayCanh));
-            panel3 = new Panel();
-            panel5 = new Panel();
-            btnSua = new Button();
-            btnThem = new Button();
-            btnReset = new Button();
-            panel4 = new Panel();
-            panel7 = new Panel();
-            rtxtMota = new RichTextBox();
-            btnIn = new Button();
-            label2 = new Label();
-            txtTenLoaiCay = new TextBox();
-            label4 = new Label();
-            label3 = new Label();
-            panel2 = new Panel();
-            panel6 = new Panel();
-            btnXoa = new Label();
-            titleTable = new Label();
-            btnHuyTimKiem = new Button();
-            btnTimKiem = new Button();
-            txtTimkiem = new TextBox();
-            label1 = new Label();
-            panel1 = new Panel();
-            dgvLoaiCayCanh = new DataGridView();
-            idLoaiCay = new DataGridViewTextBoxColumn();
-            tenLoaiCay = new DataGridViewTextBoxColumn();
-            moTa = new DataGridViewTextBoxColumn();
-            selected = new DataGridViewCheckBoxColumn();
-            delete = new DataGridViewImageColumn();
-            panel3.SuspendLayout();
-            panel5.SuspendLayout();
-            panel4.SuspendLayout();
-            panel7.SuspendLayout();
-            panel2.SuspendLayout();
-            panel6.SuspendLayout();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvLoaiCayCanh).BeginInit();
-            SuspendLayout();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.rtxtMota = new System.Windows.Forms.RichTextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtTenLoaiCay = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.btnXoa = new System.Windows.Forms.Label();
+            this.titleTable = new System.Windows.Forms.Label();
+            this.btnHuyTimKiem = new System.Windows.Forms.Button();
+            this.btnTimKiem = new System.Windows.Forms.Button();
+            this.txtTimkiem = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.dgvLoaiCayCanh = new System.Windows.Forms.DataGridView();
+            this.idLoaiCay = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenLoaiCay = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.moTa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.selected = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.delete = new System.Windows.Forms.DataGridViewImageColumn();
+            this.panel3.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLoaiCayCanh)).BeginInit();
+            this.SuspendLayout();
             // 
             // panel3
             // 
-            panel3.Controls.Add(panel5);
-            panel3.Controls.Add(panel4);
-            panel3.Dock = DockStyle.Right;
-            panel3.Location = new Point(777, 0);
-            panel3.Margin = new Padding(0);
-            panel3.Name = "panel3";
-            panel3.Padding = new Padding(6, 7, 6, 7);
-            panel3.Size = new Size(423, 520);
-            panel3.TabIndex = 1;
+            this.panel3.Controls.Add(this.panel5);
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(875, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(0);
+            this.panel3.Name = "panel3";
+            this.panel3.Padding = new System.Windows.Forms.Padding(6);
+            this.panel3.Size = new System.Drawing.Size(423, 871);
+            this.panel3.TabIndex = 1;
             // 
             // panel5
             // 
-            panel5.BorderStyle = BorderStyle.FixedSingle;
-            panel5.Controls.Add(btnSua);
-            panel5.Controls.Add(btnThem);
-            panel5.Controls.Add(btnReset);
-            panel5.Dock = DockStyle.Bottom;
-            panel5.Location = new Point(6, 432);
-            panel5.Margin = new Padding(3, 4, 3, 4);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(411, 81);
-            panel5.TabIndex = 13;
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.btnSua);
+            this.panel5.Controls.Add(this.btnThem);
+            this.panel5.Controls.Add(this.btnReset);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel5.Location = new System.Drawing.Point(6, 800);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(411, 65);
+            this.panel5.TabIndex = 13;
             // 
             // btnSua
             // 
-            btnSua.Image = Properties.Resources.write;
-            btnSua.ImageAlign = ContentAlignment.MiddleLeft;
-            btnSua.Location = new Point(161, 16);
-            btnSua.Name = "btnSua";
-            btnSua.Padding = new Padding(10, 0, 10, 0);
-            btnSua.Size = new Size(101, 51);
-            btnSua.TabIndex = 3;
-            btnSua.Text = "Sửa";
-            btnSua.TextAlign = ContentAlignment.MiddleRight;
-            btnSua.UseVisualStyleBackColor = true;
-            btnSua.Click += btnSua_Click;
+            this.btnSua.Image = global::BanHangCayCanh.Properties.Resources.write;
+            this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSua.Location = new System.Drawing.Point(161, 13);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.btnSua.Size = new System.Drawing.Size(101, 41);
+            this.btnSua.TabIndex = 3;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThem
             // 
-            btnThem.Image = Properties.Resources.add;
-            btnThem.ImageAlign = ContentAlignment.MiddleLeft;
-            btnThem.Location = new Point(18, 16);
-            btnThem.Name = "btnThem";
-            btnThem.Padding = new Padding(10, 0, 10, 0);
-            btnThem.Size = new Size(101, 51);
-            btnThem.TabIndex = 2;
-            btnThem.Text = "Thêm";
-            btnThem.TextAlign = ContentAlignment.MiddleRight;
-            btnThem.UseVisualStyleBackColor = true;
-            btnThem.Click += btnThem_Click;
+            this.btnThem.Image = global::BanHangCayCanh.Properties.Resources.add;
+            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThem.Location = new System.Drawing.Point(18, 13);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.btnThem.Size = new System.Drawing.Size(101, 41);
+            this.btnThem.TabIndex = 2;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnReset
             // 
-            btnReset.Image = Properties.Resources.circular;
-            btnReset.ImageAlign = ContentAlignment.MiddleLeft;
-            btnReset.Location = new Point(304, 16);
-            btnReset.Name = "btnReset";
-            btnReset.Padding = new Padding(10, 0, 10, 0);
-            btnReset.Size = new Size(101, 51);
-            btnReset.TabIndex = 4;
-            btnReset.Text = "Reset";
-            btnReset.TextAlign = ContentAlignment.MiddleRight;
-            btnReset.UseVisualStyleBackColor = true;
-            btnReset.Click += btnReset_Click;
+            this.btnReset.Image = global::BanHangCayCanh.Properties.Resources.circular;
+            this.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReset.Location = new System.Drawing.Point(304, 13);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.btnReset.Size = new System.Drawing.Size(101, 41);
+            this.btnReset.TabIndex = 4;
+            this.btnReset.Text = "Reset";
+            this.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // panel4
             // 
-            panel4.BorderStyle = BorderStyle.FixedSingle;
-            panel4.Controls.Add(panel7);
-            panel4.Controls.Add(btnIn);
-            panel4.Controls.Add(label2);
-            panel4.Controls.Add(txtTenLoaiCay);
-            panel4.Controls.Add(label4);
-            panel4.Controls.Add(label3);
-            panel4.Dock = DockStyle.Fill;
-            panel4.Location = new Point(6, 7);
-            panel4.Margin = new Padding(0);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(411, 506);
-            panel4.TabIndex = 0;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.panel7);
+            this.panel4.Controls.Add(this.label2);
+            this.panel4.Controls.Add(this.txtTenLoaiCay);
+            this.panel4.Controls.Add(this.label4);
+            this.panel4.Controls.Add(this.label3);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(6, 6);
+            this.panel4.Margin = new System.Windows.Forms.Padding(0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(411, 859);
+            this.panel4.TabIndex = 0;
             // 
             // panel7
             // 
-            panel7.BorderStyle = BorderStyle.FixedSingle;
-            panel7.Controls.Add(rtxtMota);
-            panel7.Location = new Point(110, 136);
-            panel7.Margin = new Padding(3, 4, 3, 4);
-            panel7.Name = "panel7";
-            panel7.Size = new Size(292, 127);
-            panel7.TabIndex = 13;
+            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel7.Controls.Add(this.rtxtMota);
+            this.panel7.Location = new System.Drawing.Point(110, 109);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(292, 102);
+            this.panel7.TabIndex = 13;
             // 
             // rtxtMota
             // 
-            rtxtMota.BorderStyle = BorderStyle.None;
-            rtxtMota.Location = new Point(-1, 0);
-            rtxtMota.Margin = new Padding(3, 4, 3, 4);
-            rtxtMota.Name = "rtxtMota";
-            rtxtMota.Size = new Size(299, 125);
-            rtxtMota.TabIndex = 8;
-            rtxtMota.Text = "";
-            // 
-            // btnIn
-            // 
-            btnIn.Image = Properties.Resources.print;
-            btnIn.ImageAlign = ContentAlignment.MiddleLeft;
-            btnIn.Location = new Point(300, 4);
-            btnIn.Name = "btnIn";
-            btnIn.Padding = new Padding(10, 0, 10, 0);
-            btnIn.Size = new Size(101, 51);
-            btnIn.TabIndex = 11;
-            btnIn.Text = "In";
-            btnIn.TextAlign = ContentAlignment.MiddleRight;
-            btnIn.UseVisualStyleBackColor = true;
-            btnIn.Visible = false;
+            this.rtxtMota.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtxtMota.Location = new System.Drawing.Point(-1, 0);
+            this.rtxtMota.Name = "rtxtMota";
+            this.rtxtMota.Size = new System.Drawing.Size(299, 100);
+            this.rtxtMota.TabIndex = 8;
+            this.rtxtMota.Text = "";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(3, 18);
-            label2.Name = "label2";
-            label2.Size = new Size(174, 20);
-            label2.TabIndex = 9;
-            label2.Text = "Thông tin loại cây cảnh:";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(3, 14);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(174, 20);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Thông tin loại cây cảnh:";
             // 
             // txtTenLoaiCay
             // 
-            txtTenLoaiCay.Location = new Point(110, 81);
-            txtTenLoaiCay.Name = "txtTenLoaiCay";
-            txtTenLoaiCay.Size = new Size(292, 27);
-            txtTenLoaiCay.TabIndex = 7;
+            this.txtTenLoaiCay.Location = new System.Drawing.Point(110, 65);
+            this.txtTenLoaiCay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTenLoaiCay.Name = "txtTenLoaiCay";
+            this.txtTenLoaiCay.Size = new System.Drawing.Size(292, 22);
+            this.txtTenLoaiCay.TabIndex = 7;
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(14, 136);
-            label4.Name = "label4";
-            label4.Size = new Size(51, 20);
-            label4.TabIndex = 12;
-            label4.Text = "Mô tả:";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(14, 109);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(43, 16);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Mô tả:";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(14, 85);
-            label3.Name = "label3";
-            label3.Size = new Size(90, 20);
-            label3.TabIndex = 10;
-            label3.Text = "Tên loại cây:";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(14, 68);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(84, 16);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Tên loại cây:";
             // 
             // panel2
             // 
-            panel2.Controls.Add(panel6);
-            panel2.Controls.Add(btnHuyTimKiem);
-            panel2.Controls.Add(btnTimKiem);
-            panel2.Controls.Add(txtTimkiem);
-            panel2.Controls.Add(label1);
-            panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(0, 0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(777, 113);
-            panel2.TabIndex = 0;
+            this.panel2.Controls.Add(this.panel6);
+            this.panel2.Controls.Add(this.btnHuyTimKiem);
+            this.panel2.Controls.Add(this.btnTimKiem);
+            this.panel2.Controls.Add(this.txtTimkiem);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(875, 90);
+            this.panel2.TabIndex = 0;
             // 
             // panel6
             // 
-            panel6.Controls.Add(btnXoa);
-            panel6.Controls.Add(titleTable);
-            panel6.Dock = DockStyle.Bottom;
-            panel6.Location = new Point(0, 73);
-            panel6.Margin = new Padding(3, 4, 3, 4);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(777, 40);
-            panel6.TabIndex = 16;
+            this.panel6.Controls.Add(this.btnXoa);
+            this.panel6.Controls.Add(this.titleTable);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel6.Location = new System.Drawing.Point(0, 58);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(875, 32);
+            this.panel6.TabIndex = 16;
             // 
             // btnXoa
             // 
-            btnXoa.AutoSize = true;
-            btnXoa.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnXoa.ForeColor = Color.Black;
-            btnXoa.Image = Properties.Resources.bin;
-            btnXoa.ImageAlign = ContentAlignment.MiddleLeft;
-            btnXoa.Location = new Point(623, 13);
-            btnXoa.MinimumSize = new Size(143, 27);
-            btnXoa.Name = "btnXoa";
-            btnXoa.Size = new Size(143, 27);
-            btnXoa.TabIndex = 14;
-            btnXoa.Text = "Xóa mục đã chọn";
-            btnXoa.TextAlign = ContentAlignment.MiddleRight;
-            btnXoa.UseMnemonic = false;
-            btnXoa.Visible = false;
-            btnXoa.Click += btnXoa_Click;
+            this.btnXoa.AutoSize = true;
+            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnXoa.ForeColor = System.Drawing.Color.Black;
+            this.btnXoa.Image = global::BanHangCayCanh.Properties.Resources.bin;
+            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXoa.Location = new System.Drawing.Point(721, 6);
+            this.btnXoa.MinimumSize = new System.Drawing.Size(143, 22);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(143, 22);
+            this.btnXoa.TabIndex = 14;
+            this.btnXoa.Text = "Xóa mục đã chọn";
+            this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnXoa.UseMnemonic = false;
+            this.btnXoa.Visible = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // titleTable
             // 
-            titleTable.AutoSize = true;
-            titleTable.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            titleTable.Location = new Point(11, 8);
-            titleTable.Name = "titleTable";
-            titleTable.Size = new Size(240, 28);
-            titleTable.TabIndex = 14;
-            titleTable.Text = "Danh sách loại cây cảnh";
+            this.titleTable.AutoSize = true;
+            this.titleTable.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.titleTable.Location = new System.Drawing.Point(11, 6);
+            this.titleTable.Name = "titleTable";
+            this.titleTable.Size = new System.Drawing.Size(240, 28);
+            this.titleTable.TabIndex = 14;
+            this.titleTable.Text = "Danh sách loại cây cảnh";
             // 
             // btnHuyTimKiem
             // 
-            btnHuyTimKiem.BackColor = Color.Transparent;
-            btnHuyTimKiem.BackgroundImageLayout = ImageLayout.Zoom;
-            btnHuyTimKiem.FlatAppearance.BorderSize = 0;
-            btnHuyTimKiem.FlatStyle = FlatStyle.Flat;
-            btnHuyTimKiem.Image = Properties.Resources.clear2;
-            btnHuyTimKiem.ImageAlign = ContentAlignment.MiddleLeft;
-            btnHuyTimKiem.Location = new Point(623, 19);
-            btnHuyTimKiem.Name = "btnHuyTimKiem";
-            btnHuyTimKiem.Padding = new Padding(10, 0, 10, 0);
-            btnHuyTimKiem.Size = new Size(143, 35);
-            btnHuyTimKiem.TabIndex = 3;
-            btnHuyTimKiem.Text = "Hủy tìm kiếm";
-            btnHuyTimKiem.TextAlign = ContentAlignment.MiddleRight;
-            btnHuyTimKiem.UseVisualStyleBackColor = false;
-            btnHuyTimKiem.Visible = false;
-            btnHuyTimKiem.Click += btnHuyTimKiem_Click;
+            this.btnHuyTimKiem.BackColor = System.Drawing.Color.Transparent;
+            this.btnHuyTimKiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnHuyTimKiem.FlatAppearance.BorderSize = 0;
+            this.btnHuyTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHuyTimKiem.Image = global::BanHangCayCanh.Properties.Resources.clear2;
+            this.btnHuyTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHuyTimKiem.Location = new System.Drawing.Point(721, 18);
+            this.btnHuyTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnHuyTimKiem.Name = "btnHuyTimKiem";
+            this.btnHuyTimKiem.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.btnHuyTimKiem.Size = new System.Drawing.Size(143, 28);
+            this.btnHuyTimKiem.TabIndex = 3;
+            this.btnHuyTimKiem.Text = "Hủy tìm kiếm";
+            this.btnHuyTimKiem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnHuyTimKiem.UseVisualStyleBackColor = false;
+            this.btnHuyTimKiem.Visible = false;
+            this.btnHuyTimKiem.Click += new System.EventHandler(this.btnHuyTimKiem_Click);
             // 
             // btnTimKiem
             // 
-            btnTimKiem.ImageAlign = ContentAlignment.MiddleLeft;
-            btnTimKiem.Location = new Point(494, 19);
-            btnTimKiem.MaximumSize = new Size(117, 35);
-            btnTimKiem.MinimumSize = new Size(117, 35);
-            btnTimKiem.Name = "btnTimKiem";
-            btnTimKiem.Padding = new Padding(6, 0, 6, 0);
-            btnTimKiem.Size = new Size(117, 35);
-            btnTimKiem.TabIndex = 2;
-            btnTimKiem.Text = "Tìm kiếm";
-            btnTimKiem.UseVisualStyleBackColor = true;
-            btnTimKiem.Click += btnTimKiem_Click;
+            this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTimKiem.Location = new System.Drawing.Point(494, 15);
+            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTimKiem.MaximumSize = new System.Drawing.Size(117, 28);
+            this.btnTimKiem.MinimumSize = new System.Drawing.Size(117, 28);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Padding = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.btnTimKiem.Size = new System.Drawing.Size(117, 28);
+            this.btnTimKiem.TabIndex = 2;
+            this.btnTimKiem.Text = "Tìm kiếm";
+            this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // txtTimkiem
             // 
-            txtTimkiem.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txtTimkiem.Location = new Point(156, 20);
-            txtTimkiem.MaximumSize = new Size(331, 40);
-            txtTimkiem.MinimumSize = new Size(331, 33);
-            txtTimkiem.Name = "txtTimkiem";
-            txtTimkiem.Size = new Size(331, 33);
-            txtTimkiem.TabIndex = 1;
-            txtTimkiem.TextChanged += txtTimkiem_TextChanged;
+            this.txtTimkiem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTimkiem.Location = new System.Drawing.Point(156, 16);
+            this.txtTimkiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTimkiem.MaximumSize = new System.Drawing.Size(331, 40);
+            this.txtTimkiem.MinimumSize = new System.Drawing.Size(331, 33);
+            this.txtTimkiem.Name = "txtTimkiem";
+            this.txtTimkiem.Size = new System.Drawing.Size(331, 27);
+            this.txtTimkiem.TabIndex = 1;
+            this.txtTimkiem.TextChanged += new System.EventHandler(this.txtTimkiem_TextChanged);
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(14, 26);
-            label1.Name = "label1";
-            label1.Size = new Size(136, 20);
-            label1.TabIndex = 0;
-            label1.Text = "Nội dung tìm kiếm:";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(14, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(116, 16);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Nội dung tìm kiếm:";
             // 
             // panel1
             // 
-            panel1.BackColor = Color.Transparent;
-            panel1.Controls.Add(dgvLoaiCayCanh);
-            panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(0, 113);
-            panel1.Margin = new Padding(3, 4, 3, 4);
-            panel1.Name = "panel1";
-            panel1.Padding = new Padding(11, 13, 11, 13);
-            panel1.Size = new Size(777, 407);
-            panel1.TabIndex = 6;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.dgvLoaiCayCanh);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 90);
+            this.panel1.Name = "panel1";
+            this.panel1.Padding = new System.Windows.Forms.Padding(11, 10, 11, 10);
+            this.panel1.Size = new System.Drawing.Size(875, 781);
+            this.panel1.TabIndex = 6;
             // 
             // dgvLoaiCayCanh
             // 
-            dgvLoaiCayCanh.AllowUserToResizeColumns = false;
-            dgvLoaiCayCanh.BackgroundColor = SystemColors.Control;
-            dgvLoaiCayCanh.BorderStyle = BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = SystemColors.Control;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = Color.Transparent;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dgvLoaiCayCanh.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            dgvLoaiCayCanh.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvLoaiCayCanh.Columns.AddRange(new DataGridViewColumn[] { idLoaiCay, tenLoaiCay, moTa, selected, delete });
-            dgvLoaiCayCanh.Dock = DockStyle.Fill;
-            dgvLoaiCayCanh.EnableHeadersVisualStyles = false;
-            dgvLoaiCayCanh.Location = new Point(11, 13);
-            dgvLoaiCayCanh.Margin = new Padding(3, 4, 3, 4);
-            dgvLoaiCayCanh.MultiSelect = false;
-            dgvLoaiCayCanh.Name = "dgvLoaiCayCanh";
-            dgvLoaiCayCanh.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = SystemColors.Control;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = Color.Transparent;
-            dataGridViewCellStyle2.SelectionForeColor = Color.Transparent;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            dgvLoaiCayCanh.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            dgvLoaiCayCanh.RowHeadersVisible = false;
-            dgvLoaiCayCanh.RowHeadersWidth = 51;
-            dgvLoaiCayCanh.RowTemplate.Height = 25;
-            dgvLoaiCayCanh.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvLoaiCayCanh.Size = new Size(755, 381);
-            dgvLoaiCayCanh.TabIndex = 0;
-            dgvLoaiCayCanh.CellContentClick += dgvLoaiCayCanh_CellContentClick;
-            dgvLoaiCayCanh.Click += dgvLoaiCayCanh_Click;
+            this.dgvLoaiCayCanh.AllowUserToResizeColumns = false;
+            this.dgvLoaiCayCanh.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvLoaiCayCanh.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvLoaiCayCanh.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvLoaiCayCanh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvLoaiCayCanh.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idLoaiCay,
+            this.tenLoaiCay,
+            this.moTa,
+            this.selected,
+            this.delete});
+            this.dgvLoaiCayCanh.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvLoaiCayCanh.EnableHeadersVisualStyles = false;
+            this.dgvLoaiCayCanh.Location = new System.Drawing.Point(11, 10);
+            this.dgvLoaiCayCanh.MultiSelect = false;
+            this.dgvLoaiCayCanh.Name = "dgvLoaiCayCanh";
+            this.dgvLoaiCayCanh.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvLoaiCayCanh.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvLoaiCayCanh.RowHeadersVisible = false;
+            this.dgvLoaiCayCanh.RowHeadersWidth = 51;
+            this.dgvLoaiCayCanh.RowTemplate.Height = 25;
+            this.dgvLoaiCayCanh.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvLoaiCayCanh.Size = new System.Drawing.Size(853, 761);
+            this.dgvLoaiCayCanh.TabIndex = 0;
+            this.dgvLoaiCayCanh.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLoaiCayCanh_CellContentClick);
+            this.dgvLoaiCayCanh.Click += new System.EventHandler(this.dgvLoaiCayCanh_Click);
             // 
             // idLoaiCay
             // 
-            idLoaiCay.HeaderText = "Mã loại cây";
-            idLoaiCay.MinimumWidth = 6;
-            idLoaiCay.Name = "idLoaiCay";
-            idLoaiCay.Width = 165;
+            this.idLoaiCay.HeaderText = "Mã loại cây";
+            this.idLoaiCay.MinimumWidth = 6;
+            this.idLoaiCay.Name = "idLoaiCay";
+            this.idLoaiCay.Width = 165;
             // 
             // tenLoaiCay
             // 
-            tenLoaiCay.HeaderText = "Tên loại cây";
-            tenLoaiCay.MinimumWidth = 6;
-            tenLoaiCay.Name = "tenLoaiCay";
-            tenLoaiCay.Width = 165;
+            this.tenLoaiCay.HeaderText = "Tên loại cây";
+            this.tenLoaiCay.MinimumWidth = 6;
+            this.tenLoaiCay.Name = "tenLoaiCay";
+            this.tenLoaiCay.Width = 165;
             // 
             // moTa
             // 
-            moTa.HeaderText = "Mô tả";
-            moTa.MinimumWidth = 6;
-            moTa.Name = "moTa";
-            moTa.Width = 164;
+            this.moTa.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.moTa.HeaderText = "Mô tả";
+            this.moTa.MinimumWidth = 6;
+            this.moTa.Name = "moTa";
             // 
             // selected
             // 
-            selected.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            selected.HeaderText = "";
-            selected.MinimumWidth = 6;
-            selected.Name = "selected";
-            selected.Visible = false;
-            selected.Width = 125;
+            this.selected.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.selected.HeaderText = "";
+            this.selected.MinimumWidth = 6;
+            this.selected.Name = "selected";
+            this.selected.Visible = false;
+            this.selected.Width = 125;
             // 
             // delete
             // 
-            delete.HeaderText = "";
-            delete.Image = Properties.Resources.remove;
-            delete.MinimumWidth = 20;
-            delete.Name = "delete";
-            delete.Width = 125;
+            this.delete.HeaderText = "";
+            this.delete.Image = global::BanHangCayCanh.Properties.Resources.remove;
+            this.delete.MinimumWidth = 20;
+            this.delete.Name = "delete";
+            this.delete.Width = 125;
             // 
             // FormLoaiCayCanh
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            AutoSize = true;
-            BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1200, 520);
-            Controls.Add(panel1);
-            Controls.Add(panel2);
-            Controls.Add(panel3);
-            FormBorderStyle = FormBorderStyle.FixedSingle;
-            Icon = (Icon)resources.GetObject("$this.Icon");
-            Name = "FormLoaiCayCanh";
-            RightToLeft = RightToLeft.No;
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Loại cây cảnh";
-            FormClosed += FormLoaiCayCanh_FormClosed;
-            Load += FormLoaiCayCanh_Load;
-            panel3.ResumeLayout(false);
-            panel5.ResumeLayout(false);
-            panel4.ResumeLayout(false);
-            panel4.PerformLayout();
-            panel7.ResumeLayout(false);
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            panel6.ResumeLayout(false);
-            panel6.PerformLayout();
-            panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dgvLoaiCayCanh).EndInit();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1298, 871);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "FormLoaiCayCanh";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Loại cây cảnh";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormLoaiCayCanh_FormClosed);
+            this.Load += new System.EventHandler(this.FormLoaiCayCanh_Load);
+            this.panel3.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLoaiCayCanh)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
@@ -467,7 +460,6 @@ namespace BanHangCayCanh
         private Label label3;
         private Label label2;
         private Panel panel4;
-        private Button btnIn;
         private Panel panel6;
         private Label titleTable;
         private Label btnXoa;

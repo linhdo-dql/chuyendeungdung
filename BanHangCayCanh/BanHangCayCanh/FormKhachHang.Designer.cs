@@ -120,7 +120,7 @@
             this.dgvKhachHang.RowHeadersWidth = 51;
             this.dgvKhachHang.RowTemplate.Height = 25;
             this.dgvKhachHang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvKhachHang.Size = new System.Drawing.Size(988, 735);
+            this.dgvKhachHang.Size = new System.Drawing.Size(1054, 893);
             this.dgvKhachHang.TabIndex = 0;
             this.dgvKhachHang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKhachHang_CellContentClick);
             this.dgvKhachHang.Click += new System.EventHandler(this.dgvKhachHang_Click);
@@ -191,7 +191,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 90);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(11, 10, 11, 10);
-            this.panel1.Size = new System.Drawing.Size(1010, 755);
+            this.panel1.Size = new System.Drawing.Size(1076, 913);
             this.panel1.TabIndex = 9;
             // 
             // titleTable
@@ -216,7 +216,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1010, 90);
+            this.panel2.Size = new System.Drawing.Size(1076, 90);
             this.panel2.TabIndex = 7;
             // 
             // panel6
@@ -226,7 +226,7 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel6.Location = new System.Drawing.Point(0, 58);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1010, 32);
+            this.panel6.Size = new System.Drawing.Size(1076, 32);
             this.panel6.TabIndex = 16;
             // 
             // btnXoaAll
@@ -364,7 +364,7 @@
             this.panel5.Controls.Add(this.btnThem);
             this.panel5.Controls.Add(this.btnReset);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(6, 774);
+            this.panel5.Location = new System.Drawing.Point(6, 932);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(492, 65);
             this.panel5.TabIndex = 13;
@@ -434,11 +434,11 @@
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(1010, 0);
+            this.panel3.Location = new System.Drawing.Point(1076, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
             this.panel3.Padding = new System.Windows.Forms.Padding(6);
-            this.panel3.Size = new System.Drawing.Size(504, 845);
+            this.panel3.Size = new System.Drawing.Size(504, 1003);
             this.panel3.TabIndex = 8;
             // 
             // panel4
@@ -458,7 +458,7 @@
             this.panel4.Location = new System.Drawing.Point(6, 6);
             this.panel4.Margin = new System.Windows.Forms.Padding(0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(492, 833);
+            this.panel4.Size = new System.Drawing.Size(492, 991);
             this.panel4.TabIndex = 0;
             // 
             // txtTuoi
@@ -523,7 +523,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1514, 845);
+            this.ClientSize = new System.Drawing.Size(1580, 1003);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);

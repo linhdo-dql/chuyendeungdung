@@ -135,7 +135,7 @@ namespace BanHangCayCanh
             
             panelSanPham.Visible = false;
             currentIdHD = dgvHoaDon.CurrentRow.Cells["idHoaDonAll"].Value.ToString();
-            lbIDHoaDon.Text = currentIdHD;
+            lbIDHoaDon.Text = "Thông tin hóa đơn : "+ currentIdHD;
             cbbIdNhanVien.Text = dgvHoaDon.CurrentRow.Cells["idNhanVien"].Value.ToString();
             DataRow dr = Data.GetPropertiesById("KhachHang", "idKH", dgvHoaDon.CurrentRow.Cells["idKhachHang"].Value.ToString()).Rows[0];
             cbbKhachHang.Text = dr["tenKH"].ToString();
@@ -664,6 +664,19 @@ namespace BanHangCayCanh
         private void btnHuyTimKiem_Click(object sender, EventArgs e)
         {
             LoadDataGridViewBill();
+        }
+
+        private void txtGiamGia_TextChanged(object sender, EventArgs e)
+        {
+            var regex = new Regex("^[0-9]+$");
+            if (float.Parse(txtTongTien.Text) < 0 || !regex.IsMatch(txtGiamGia.Text))
+            {
+                MessageBox.Show("Chiết khấu không hợp lệ!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtGiamGia.Text = "0";
+                ResetTongTien();
+                return;
+            }
+            ResetTongTien();
         }
     }
 }

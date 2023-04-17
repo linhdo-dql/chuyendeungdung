@@ -85,10 +85,6 @@ namespace BanHangCayCanh
             this.dtpNgayLap = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.lbIDHoaDon = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.cbbTrangThai = new System.Windows.Forms.ComboBox();
@@ -130,6 +126,8 @@ namespace BanHangCayCanh
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.txtTimkiem = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.lbIDHoaDon = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.panelThongTinHoaDon.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -142,7 +140,6 @@ namespace BanHangCayCanh
             this.panelKhachHang.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel11.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel15.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -153,6 +150,7 @@ namespace BanHangCayCanh
             this.panel13.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel10.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelThongTinHoaDon
@@ -440,6 +438,7 @@ namespace BanHangCayCanh
             0,
             0,
             0});
+            this.nudSoLuong.ValueChanged += new System.EventHandler(this.nudSoLuong_ValueChanged);
             // 
             // btnThemSP
             // 
@@ -503,6 +502,7 @@ namespace BanHangCayCanh
             this.cbbTenCay.Name = "cbbTenCay";
             this.cbbTenCay.Size = new System.Drawing.Size(183, 24);
             this.cbbTenCay.TabIndex = 12;
+            this.cbbTenCay.SelectedIndexChanged += new System.EventHandler(this.cbbTenCay_SelectedIndexChanged);
             // 
             // label22
             // 
@@ -739,48 +739,6 @@ namespace BanHangCayCanh
             this.label15.TabIndex = 12;
             this.label15.Text = "Nhân viên:";
             // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.lbIDHoaDon);
-            this.panel7.Controls.Add(this.label14);
-            this.panel7.Controls.Add(this.label2);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 0);
-            this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(681, 34);
-            this.panel7.TabIndex = 6;
-            // 
-            // lbIDHoaDon
-            // 
-            this.lbIDHoaDon.AutoSize = true;
-            this.lbIDHoaDon.Location = new System.Drawing.Point(566, 12);
-            this.lbIDHoaDon.Name = "lbIDHoaDon";
-            this.lbIDHoaDon.Size = new System.Drawing.Size(21, 16);
-            this.lbIDHoaDon.TabIndex = 2;
-            this.lbIDHoaDon.Text = "Id:";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(527, 12);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(21, 16);
-            this.label14.TabIndex = 1;
-            this.label14.Text = "Id:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Name = "label2";
-            this.label2.Padding = new System.Windows.Forms.Padding(5, 8, 0, 0);
-            this.label2.Size = new System.Drawing.Size(143, 28);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Thông tin hóa đơn";
-            // 
             // panel9
             // 
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -880,6 +838,7 @@ namespace BanHangCayCanh
             this.txtGiamGia.TabIndex = 32;
             this.txtGiamGia.Text = "0";
             this.txtGiamGia.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtGiamGia.TextChanged += new System.EventHandler(this.txtGiamGia_TextChanged);
             // 
             // panel12
             // 
@@ -1317,6 +1276,29 @@ namespace BanHangCayCanh
             this.label1.TabIndex = 8;
             this.label1.Text = "Nội dung tìm kiếm:";
             // 
+            // lbIDHoaDon
+            // 
+            this.lbIDHoaDon.AutoSize = true;
+            this.lbIDHoaDon.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbIDHoaDon.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.lbIDHoaDon.Location = new System.Drawing.Point(5, 5);
+            this.lbIDHoaDon.Name = "lbIDHoaDon";
+            this.lbIDHoaDon.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.lbIDHoaDon.Size = new System.Drawing.Size(143, 20);
+            this.lbIDHoaDon.TabIndex = 0;
+            this.lbIDHoaDon.Text = "Thông tin hóa đơn";
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.lbIDHoaDon);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(0, 0);
+            this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel7.Name = "panel7";
+            this.panel7.Padding = new System.Windows.Forms.Padding(5);
+            this.panel7.Size = new System.Drawing.Size(681, 34);
+            this.panel7.TabIndex = 6;
+            // 
             // FormBanHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1348,8 +1330,6 @@ namespace BanHangCayCanh
             this.panel2.PerformLayout();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.panel15.ResumeLayout(false);
@@ -1365,6 +1345,8 @@ namespace BanHangCayCanh
             this.panel6.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1401,8 +1383,6 @@ namespace BanHangCayCanh
         private Panel panel14;
         private Button button2;
         private Label label16;
-        private Panel panel7;
-        private Label label2;
         private Panel panel11;
         private DateTimePicker dtpNgayLap;
         private Label label3;
@@ -1463,7 +1443,7 @@ namespace BanHangCayCanh
         private DataGridViewTextBoxColumn thanhTien;
         private DataGridViewTextBoxColumn idHoaDon;
         private DataGridViewTextBoxColumn anhCay;
+        private Panel panel7;
         private Label lbIDHoaDon;
-        private Label label14;
     }
 }

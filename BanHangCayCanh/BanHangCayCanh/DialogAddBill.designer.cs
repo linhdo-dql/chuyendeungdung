@@ -243,6 +243,7 @@ namespace BanHangCayCanh
             this.txtGiamGia.TabIndex = 16;
             this.txtGiamGia.Text = "0";
             this.txtGiamGia.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtGiamGia.TextChanged += new System.EventHandler(this.txtGiamGia_TextChanged);
             // 
             // panel4
             // 
