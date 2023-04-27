@@ -239,6 +239,7 @@ namespace BanHangCayCanh
             btnReset.Enabled = true;
             btnThem.Enabled = true;
             btnSua.Enabled = true;
+            MessageBox.Show("Thêm thành công!");
         }
 
         private string GetIdLoaiCay(string tenLoaiCay)
@@ -278,6 +279,7 @@ namespace BanHangCayCanh
             isImageSelected = false;
             LoadDataGridView();
             ResetValue();
+            MessageBox.Show("Sửa thành công!");
         }
 
         private void dgvCayCanh_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -328,6 +330,7 @@ namespace BanHangCayCanh
                 LoadDataGridView();
                 ResetValue();
             }
+            MessageBox.Show("Đã xóa!");
         }
 
         private void DeleteMoreData()
@@ -346,6 +349,7 @@ namespace BanHangCayCanh
                 ListIdSelecteds.Clear();
                 txtSoLuongDaChon.Text = "Đã chọn: " + ListIdSelecteds.Count;
             }
+            MessageBox.Show("Đã xóa!");
         }
 
         private void btnXoa_Click(object sender, EventArgs e)

@@ -49,7 +49,16 @@ namespace BanHangCayCanh
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.dgvCTHD = new System.Windows.Forms.DataGridView();
+            this.idCTHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.anhCay = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idCay = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenCay = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.donGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.thanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idHoaDon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelSanPham = new System.Windows.Forms.Panel();
+            this.picAnhCayCanh = new System.Windows.Forms.PictureBox();
             this.btnClosePanelSP = new System.Windows.Forms.Button();
             this.txtThanhTien = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
@@ -87,28 +96,19 @@ namespace BanHangCayCanh
             this.dtpNgayLap = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.picAnhCayCanh = new System.Windows.Forms.PictureBox();
-            this.idCTHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.anhCay = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idCay = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenCay = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.soLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.donGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.thanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idHoaDon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCTHD)).BeginInit();
             this.panelSanPham.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAnhCayCanh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudSoLuong)).BeginInit();
             this.panel12.SuspendLayout();
             this.panelKhachHang.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picAnhCayCanh)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -331,6 +331,72 @@ namespace BanHangCayCanh
             this.dgvCTHD.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCTHD_CellContentClick);
             this.dgvCTHD.Click += new System.EventHandler(this.dgvCTHD_Click);
             // 
+            // idCTHD
+            // 
+            this.idCTHD.HeaderText = "Mã CTHD";
+            this.idCTHD.MinimumWidth = 6;
+            this.idCTHD.Name = "idCTHD";
+            this.idCTHD.ReadOnly = true;
+            this.idCTHD.Width = 75;
+            // 
+            // anhCay
+            // 
+            this.anhCay.HeaderText = "Ảnh";
+            this.anhCay.MinimumWidth = 6;
+            this.anhCay.Name = "anhCay";
+            this.anhCay.Visible = false;
+            this.anhCay.Width = 125;
+            // 
+            // idCay
+            // 
+            this.idCay.HeaderText = "Mã cây";
+            this.idCay.MinimumWidth = 6;
+            this.idCay.Name = "idCay";
+            this.idCay.ReadOnly = true;
+            this.idCay.Visible = false;
+            this.idCay.Width = 125;
+            // 
+            // tenCay
+            // 
+            this.tenCay.HeaderText = "Tên cây";
+            this.tenCay.MinimumWidth = 6;
+            this.tenCay.Name = "tenCay";
+            this.tenCay.ReadOnly = true;
+            this.tenCay.Width = 125;
+            // 
+            // soLuong
+            // 
+            this.soLuong.HeaderText = "Số lượng";
+            this.soLuong.MinimumWidth = 6;
+            this.soLuong.Name = "soLuong";
+            this.soLuong.ReadOnly = true;
+            this.soLuong.Width = 105;
+            // 
+            // donGia
+            // 
+            this.donGia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.donGia.HeaderText = "Đơn giá";
+            this.donGia.MinimumWidth = 6;
+            this.donGia.Name = "donGia";
+            this.donGia.ReadOnly = true;
+            // 
+            // thanhTien
+            // 
+            this.thanhTien.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.thanhTien.HeaderText = "Thành tiền";
+            this.thanhTien.MinimumWidth = 6;
+            this.thanhTien.Name = "thanhTien";
+            this.thanhTien.ReadOnly = true;
+            // 
+            // idHoaDon
+            // 
+            this.idHoaDon.HeaderText = "Mã Hóa Đơn";
+            this.idHoaDon.MinimumWidth = 6;
+            this.idHoaDon.Name = "idHoaDon";
+            this.idHoaDon.ReadOnly = true;
+            this.idHoaDon.Visible = false;
+            this.idHoaDon.Width = 125;
+            // 
             // panelSanPham
             // 
             this.panelSanPham.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -355,6 +421,17 @@ namespace BanHangCayCanh
             this.panelSanPham.Size = new System.Drawing.Size(682, 158);
             this.panelSanPham.TabIndex = 7;
             this.panelSanPham.Visible = false;
+            // 
+            // picAnhCayCanh
+            // 
+            this.picAnhCayCanh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picAnhCayCanh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picAnhCayCanh.Location = new System.Drawing.Point(17, 32);
+            this.picAnhCayCanh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.picAnhCayCanh.Name = "picAnhCayCanh";
+            this.picAnhCayCanh.Size = new System.Drawing.Size(130, 115);
+            this.picAnhCayCanh.TabIndex = 25;
+            this.picAnhCayCanh.TabStop = false;
             // 
             // btnClosePanelSP
             // 
@@ -677,7 +754,6 @@ namespace BanHangCayCanh
             this.cbbTrangThai.Items.AddRange(new object[] {
             "Chờ xử lý",
             "Đang giao",
-            "Chưa thanh toán",
             "Đã thanh toán"});
             this.cbbTrangThai.Location = new System.Drawing.Point(87, 3);
             this.cbbTrangThai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -767,83 +843,6 @@ namespace BanHangCayCanh
             this.label15.TabIndex = 12;
             this.label15.Text = "Nhân viên:";
             // 
-            // picAnhCayCanh
-            // 
-            this.picAnhCayCanh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picAnhCayCanh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picAnhCayCanh.Location = new System.Drawing.Point(17, 32);
-            this.picAnhCayCanh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.picAnhCayCanh.Name = "picAnhCayCanh";
-            this.picAnhCayCanh.Size = new System.Drawing.Size(130, 115);
-            this.picAnhCayCanh.TabIndex = 25;
-            this.picAnhCayCanh.TabStop = false;
-            // 
-            // idCTHD
-            // 
-            this.idCTHD.HeaderText = "Mã CTHD";
-            this.idCTHD.MinimumWidth = 6;
-            this.idCTHD.Name = "idCTHD";
-            this.idCTHD.ReadOnly = true;
-            this.idCTHD.Width = 75;
-            // 
-            // anhCay
-            // 
-            this.anhCay.HeaderText = "Ảnh";
-            this.anhCay.MinimumWidth = 6;
-            this.anhCay.Name = "anhCay";
-            this.anhCay.Visible = false;
-            this.anhCay.Width = 125;
-            // 
-            // idCay
-            // 
-            this.idCay.HeaderText = "Mã cây";
-            this.idCay.MinimumWidth = 6;
-            this.idCay.Name = "idCay";
-            this.idCay.ReadOnly = true;
-            this.idCay.Visible = false;
-            this.idCay.Width = 125;
-            // 
-            // tenCay
-            // 
-            this.tenCay.HeaderText = "Tên cây";
-            this.tenCay.MinimumWidth = 6;
-            this.tenCay.Name = "tenCay";
-            this.tenCay.ReadOnly = true;
-            this.tenCay.Width = 125;
-            // 
-            // soLuong
-            // 
-            this.soLuong.HeaderText = "Số lượng";
-            this.soLuong.MinimumWidth = 6;
-            this.soLuong.Name = "soLuong";
-            this.soLuong.ReadOnly = true;
-            this.soLuong.Width = 105;
-            // 
-            // donGia
-            // 
-            this.donGia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.donGia.HeaderText = "Đơn giá";
-            this.donGia.MinimumWidth = 6;
-            this.donGia.Name = "donGia";
-            this.donGia.ReadOnly = true;
-            // 
-            // thanhTien
-            // 
-            this.thanhTien.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.thanhTien.HeaderText = "Thành tiền";
-            this.thanhTien.MinimumWidth = 6;
-            this.thanhTien.Name = "thanhTien";
-            this.thanhTien.ReadOnly = true;
-            // 
-            // idHoaDon
-            // 
-            this.idHoaDon.HeaderText = "Mã Hóa Đơn";
-            this.idHoaDon.MinimumWidth = 6;
-            this.idHoaDon.Name = "idHoaDon";
-            this.idHoaDon.ReadOnly = true;
-            this.idHoaDon.Visible = false;
-            this.idHoaDon.Width = 125;
-            // 
             // DialogAddBill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -870,6 +869,7 @@ namespace BanHangCayCanh
             ((System.ComponentModel.ISupportInitialize)(this.dgvCTHD)).EndInit();
             this.panelSanPham.ResumeLayout(false);
             this.panelSanPham.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAnhCayCanh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudSoLuong)).EndInit();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
@@ -881,7 +881,6 @@ namespace BanHangCayCanh
             this.panel5.PerformLayout();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picAnhCayCanh)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -39,7 +39,7 @@ namespace BanHangCayCanh
             this.panelThongTinHoaDon = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel16 = new System.Windows.Forms.Panel();
+            this.panelSupport5 = new System.Windows.Forms.Panel();
             this.dgvCTHD = new System.Windows.Forms.DataGridView();
             this.idCTHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idCay = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,10 +64,10 @@ namespace BanHangCayCanh
             this.label21 = new System.Windows.Forms.Label();
             this.cbbTenCay = new System.Windows.Forms.ComboBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.panel17 = new System.Windows.Forms.Panel();
+            this.panelSupport4 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.panelKhachHang = new System.Windows.Forms.Panel();
+            this.panelSupport3 = new System.Windows.Forms.Panel();
             this.txtTenKhachHang = new System.Windows.Forms.TextBox();
             this.cbbKhachHang = new System.Windows.Forms.ComboBox();
             this.txtTuoiKH = new System.Windows.Forms.TextBox();
@@ -77,17 +77,17 @@ namespace BanHangCayCanh
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panelSupport2 = new System.Windows.Forms.Panel();
             this.rbKhachHangCu = new System.Windows.Forms.RadioButton();
             this.rbKhachHangMoi = new System.Windows.Forms.RadioButton();
-            this.panel11 = new System.Windows.Forms.Panel();
+            this.panelSupport1 = new System.Windows.Forms.Panel();
             this.cbbIdNhanVien = new System.Windows.Forms.ComboBox();
             this.dtpNgayLap = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.lbIDHoaDon = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
+            this.panelSupport = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.cbbTrangThai = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -131,17 +131,17 @@ namespace BanHangCayCanh
             this.panelThongTinHoaDon.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel16.SuspendLayout();
+            this.panelSupport5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCTHD)).BeginInit();
             this.panelSanPham.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAnhCayCanh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudSoLuong)).BeginInit();
-            this.panel17.SuspendLayout();
-            this.panelKhachHang.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel11.SuspendLayout();
+            this.panelSupport4.SuspendLayout();
+            this.panelSupport3.SuspendLayout();
+            this.panelSupport2.SuspendLayout();
+            this.panelSupport1.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.panel9.SuspendLayout();
+            this.panelSupport.SuspendLayout();
             this.panel15.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -178,13 +178,13 @@ namespace BanHangCayCanh
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.panel16);
-            this.panel3.Controls.Add(this.panel17);
-            this.panel3.Controls.Add(this.panelKhachHang);
-            this.panel3.Controls.Add(this.panel2);
-            this.panel3.Controls.Add(this.panel11);
+            this.panel3.Controls.Add(this.panelSupport5);
+            this.panel3.Controls.Add(this.panelSupport4);
+            this.panel3.Controls.Add(this.panelSupport3);
+            this.panel3.Controls.Add(this.panelSupport2);
+            this.panel3.Controls.Add(this.panelSupport1);
             this.panel3.Controls.Add(this.panel7);
-            this.panel3.Controls.Add(this.panel9);
+            this.panel3.Controls.Add(this.panelSupport);
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 0);
@@ -193,17 +193,17 @@ namespace BanHangCayCanh
             this.panel3.Size = new System.Drawing.Size(683, 987);
             this.panel3.TabIndex = 0;
             // 
-            // panel16
+            // panelSupport5
             // 
-            this.panel16.Controls.Add(this.dgvCTHD);
-            this.panel16.Controls.Add(this.panelSanPham);
-            this.panel16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel16.Location = new System.Drawing.Point(0, 203);
-            this.panel16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel16.Name = "panel16";
-            this.panel16.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
-            this.panel16.Size = new System.Drawing.Size(681, 630);
-            this.panel16.TabIndex = 35;
+            this.panelSupport5.Controls.Add(this.dgvCTHD);
+            this.panelSupport5.Controls.Add(this.panelSanPham);
+            this.panelSupport5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelSupport5.Location = new System.Drawing.Point(0, 203);
+            this.panelSupport5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelSupport5.Name = "panelSupport5";
+            this.panelSupport5.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
+            this.panelSupport5.Size = new System.Drawing.Size(681, 630);
+            this.panelSupport5.TabIndex = 35;
             // 
             // dgvCTHD
             // 
@@ -513,16 +513,16 @@ namespace BanHangCayCanh
             this.label22.TabIndex = 11;
             this.label22.Text = "Tên cây:";
             // 
-            // panel17
+            // panelSupport4
             // 
-            this.panel17.Controls.Add(this.label7);
-            this.panel17.Controls.Add(this.label17);
-            this.panel17.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel17.Location = new System.Drawing.Point(0, 175);
-            this.panel17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(681, 28);
-            this.panel17.TabIndex = 34;
+            this.panelSupport4.Controls.Add(this.label7);
+            this.panelSupport4.Controls.Add(this.label17);
+            this.panelSupport4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSupport4.Location = new System.Drawing.Point(0, 175);
+            this.panelSupport4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelSupport4.Name = "panelSupport4";
+            this.panelSupport4.Size = new System.Drawing.Size(681, 28);
+            this.panelSupport4.TabIndex = 34;
             // 
             // label7
             // 
@@ -552,23 +552,23 @@ namespace BanHangCayCanh
             this.label17.TabIndex = 10;
             this.label17.Text = "Danh sách sản phẩm";
             // 
-            // panelKhachHang
+            // panelSupport3
             // 
-            this.panelKhachHang.Controls.Add(this.txtTenKhachHang);
-            this.panelKhachHang.Controls.Add(this.cbbKhachHang);
-            this.panelKhachHang.Controls.Add(this.txtTuoiKH);
-            this.panelKhachHang.Controls.Add(this.txtDiaChiKH);
-            this.panelKhachHang.Controls.Add(this.label11);
-            this.panelKhachHang.Controls.Add(this.txtSDT);
-            this.panelKhachHang.Controls.Add(this.label9);
-            this.panelKhachHang.Controls.Add(this.label10);
-            this.panelKhachHang.Controls.Add(this.label12);
-            this.panelKhachHang.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelKhachHang.Location = new System.Drawing.Point(0, 99);
-            this.panelKhachHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelKhachHang.Name = "panelKhachHang";
-            this.panelKhachHang.Size = new System.Drawing.Size(681, 76);
-            this.panelKhachHang.TabIndex = 33;
+            this.panelSupport3.Controls.Add(this.txtTenKhachHang);
+            this.panelSupport3.Controls.Add(this.cbbKhachHang);
+            this.panelSupport3.Controls.Add(this.txtTuoiKH);
+            this.panelSupport3.Controls.Add(this.txtDiaChiKH);
+            this.panelSupport3.Controls.Add(this.label11);
+            this.panelSupport3.Controls.Add(this.txtSDT);
+            this.panelSupport3.Controls.Add(this.label9);
+            this.panelSupport3.Controls.Add(this.label10);
+            this.panelSupport3.Controls.Add(this.label12);
+            this.panelSupport3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSupport3.Location = new System.Drawing.Point(0, 99);
+            this.panelSupport3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelSupport3.Name = "panelSupport3";
+            this.panelSupport3.Size = new System.Drawing.Size(681, 76);
+            this.panelSupport3.TabIndex = 33;
             // 
             // txtTenKhachHang
             // 
@@ -653,16 +653,16 @@ namespace BanHangCayCanh
             this.label12.TabIndex = 10;
             this.label12.Text = "Tên khách hàng:";
             // 
-            // panel2
+            // panelSupport2
             // 
-            this.panel2.Controls.Add(this.rbKhachHangCu);
-            this.panel2.Controls.Add(this.rbKhachHangMoi);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 71);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(681, 28);
-            this.panel2.TabIndex = 24;
+            this.panelSupport2.Controls.Add(this.rbKhachHangCu);
+            this.panelSupport2.Controls.Add(this.rbKhachHangMoi);
+            this.panelSupport2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSupport2.Location = new System.Drawing.Point(0, 71);
+            this.panelSupport2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelSupport2.Name = "panelSupport2";
+            this.panelSupport2.Size = new System.Drawing.Size(681, 28);
+            this.panelSupport2.TabIndex = 24;
             // 
             // rbKhachHangCu
             // 
@@ -688,18 +688,18 @@ namespace BanHangCayCanh
             this.rbKhachHangMoi.UseVisualStyleBackColor = true;
             this.rbKhachHangMoi.CheckedChanged += new System.EventHandler(this.rbKhachHangMoi_CheckedChanged);
             // 
-            // panel11
+            // panelSupport1
             // 
-            this.panel11.Controls.Add(this.cbbIdNhanVien);
-            this.panel11.Controls.Add(this.dtpNgayLap);
-            this.panel11.Controls.Add(this.label3);
-            this.panel11.Controls.Add(this.label15);
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel11.Location = new System.Drawing.Point(0, 34);
-            this.panel11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(681, 37);
-            this.panel11.TabIndex = 23;
+            this.panelSupport1.Controls.Add(this.cbbIdNhanVien);
+            this.panelSupport1.Controls.Add(this.dtpNgayLap);
+            this.panelSupport1.Controls.Add(this.label3);
+            this.panelSupport1.Controls.Add(this.label15);
+            this.panelSupport1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSupport1.Location = new System.Drawing.Point(0, 34);
+            this.panelSupport1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelSupport1.Name = "panelSupport1";
+            this.panelSupport1.Size = new System.Drawing.Size(681, 37);
+            this.panelSupport1.TabIndex = 23;
             // 
             // cbbIdNhanVien
             // 
@@ -762,26 +762,26 @@ namespace BanHangCayCanh
             this.lbIDHoaDon.TabIndex = 0;
             this.lbIDHoaDon.Text = "Thông tin hóa đơn";
             // 
-            // panel9
+            // panelSupport
             // 
-            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel9.Controls.Add(this.panel15);
-            this.panel9.Controls.Add(this.label16);
-            this.panel9.Controls.Add(this.btnThem);
-            this.panel9.Controls.Add(this.label20);
-            this.panel9.Controls.Add(this.txtGiamGia);
-            this.panel9.Controls.Add(this.panel12);
-            this.panel9.Controls.Add(this.txtGiaCay);
-            this.panel9.Controls.Add(this.label19);
-            this.panel9.Controls.Add(this.txtTongTien);
-            this.panel9.Controls.Add(this.label13);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel9.Location = new System.Drawing.Point(0, 833);
-            this.panel9.Margin = new System.Windows.Forms.Padding(0);
-            this.panel9.Name = "panel9";
-            this.panel9.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
-            this.panel9.Size = new System.Drawing.Size(681, 96);
-            this.panel9.TabIndex = 5;
+            this.panelSupport.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelSupport.Controls.Add(this.panel15);
+            this.panelSupport.Controls.Add(this.label16);
+            this.panelSupport.Controls.Add(this.btnThem);
+            this.panelSupport.Controls.Add(this.label20);
+            this.panelSupport.Controls.Add(this.txtGiamGia);
+            this.panelSupport.Controls.Add(this.panel12);
+            this.panelSupport.Controls.Add(this.txtGiaCay);
+            this.panelSupport.Controls.Add(this.label19);
+            this.panelSupport.Controls.Add(this.txtTongTien);
+            this.panelSupport.Controls.Add(this.label13);
+            this.panelSupport.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelSupport.Location = new System.Drawing.Point(0, 833);
+            this.panelSupport.Margin = new System.Windows.Forms.Padding(0);
+            this.panelSupport.Name = "panelSupport";
+            this.panelSupport.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
+            this.panelSupport.Size = new System.Drawing.Size(681, 96);
+            this.panelSupport.TabIndex = 5;
             // 
             // panel15
             // 
@@ -799,7 +799,6 @@ namespace BanHangCayCanh
             this.cbbTrangThai.Items.AddRange(new object[] {
             "Chờ xử lý",
             "Đang giao",
-            "Chưa thanh toán",
             "Đã thanh toán",
             "Đã hủy"});
             this.cbbTrangThai.Location = new System.Drawing.Point(87, 3);
@@ -1318,24 +1317,24 @@ namespace BanHangCayCanh
             this.panelThongTinHoaDon.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            this.panel16.ResumeLayout(false);
+            this.panelSupport5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCTHD)).EndInit();
             this.panelSanPham.ResumeLayout(false);
             this.panelSanPham.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAnhCayCanh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudSoLuong)).EndInit();
-            this.panel17.ResumeLayout(false);
-            this.panel17.PerformLayout();
-            this.panelKhachHang.ResumeLayout(false);
-            this.panelKhachHang.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
+            this.panelSupport4.ResumeLayout(false);
+            this.panelSupport4.PerformLayout();
+            this.panelSupport3.ResumeLayout(false);
+            this.panelSupport3.PerformLayout();
+            this.panelSupport2.ResumeLayout(false);
+            this.panelSupport2.PerformLayout();
+            this.panelSupport1.ResumeLayout(false);
+            this.panelSupport1.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
+            this.panelSupport.ResumeLayout(false);
+            this.panelSupport.PerformLayout();
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -1358,7 +1357,7 @@ namespace BanHangCayCanh
         private Panel panelThongTinHoaDon;
         private Panel panel4;
         private Panel panel3;
-        private Panel panel9;
+        private Panel panelSupport;
         private Label txtTongTien;
         private Label label13;
         private Panel panel5;
@@ -1385,7 +1384,7 @@ namespace BanHangCayCanh
         private Panel panel14;
         private Button btnXuatDSHoaDon;
         private Label label16;
-        private Panel panel11;
+        private Panel panelSupport1;
         private DateTimePicker dtpNgayLap;
         private Label label3;
         private Label label15;
@@ -1403,7 +1402,7 @@ namespace BanHangCayCanh
         private DataGridViewTextBoxColumn chietKhau;
         private DataGridViewTextBoxColumn tongTien;
         private DataGridViewTextBoxColumn trangThai;
-        private Panel panel16;
+        private Panel panelSupport5;
         private DataGridView dgvCTHD;
         private Panel panelSanPham;
         private Button btnClosePanelSP;
@@ -1419,10 +1418,10 @@ namespace BanHangCayCanh
         private Label label21;
         private ComboBox cbbTenCay;
         private Label label22;
-        private Panel panel17;
+        private Panel panelSupport4;
         private Label label7;
         private Label label17;
-        private Panel panelKhachHang;
+        private Panel panelSupport3;
         private ComboBox cbbKhachHang;
         private TextBox txtTuoiKH;
         private TextBox txtDiaChiKH;
@@ -1431,7 +1430,7 @@ namespace BanHangCayCanh
         private Label label9;
         private Label label10;
         private Label label12;
-        private Panel panel2;
+        private Panel panelSupport2;
         private RadioButton rbKhachHangCu;
         private RadioButton rbKhachHangMoi;
         private ComboBox cbbIdNhanVien;

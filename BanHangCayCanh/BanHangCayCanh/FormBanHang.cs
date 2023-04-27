@@ -150,6 +150,7 @@ namespace BanHangCayCanh
             LoadDataGridViewBillDetail();
             ResetTongTien();
             // }
+            SetEditable(cbbTrangThai.Text == "Chờ xử lý");
         }
 
         private void LoadDataGridViewBillDetail()
@@ -539,7 +540,7 @@ namespace BanHangCayCanh
             Data.RunSQL(sql);
             UpdateCTHD();
             LoadDataGridViewBill();
-
+            MessageBox.Show("Cập nhật thành công");
         }
 
         private void UpdateCTHD()
@@ -614,7 +615,7 @@ namespace BanHangCayCanh
         private void rbKhachHangMoi_CheckedChanged(object sender, EventArgs e)
         {
             isOldCustomer = false;
-            panelKhachHang.Visible = true;
+            panelSupport3.Visible = true;
             txtTenKhachHang.Visible = true;
             cbbKhachHang.Visible = false;
             ResetDialog();
@@ -624,7 +625,7 @@ namespace BanHangCayCanh
         private void rbKhachHangCu_CheckedChanged(object sender, EventArgs e)
         {
             isOldCustomer = true;
-            panelKhachHang.Visible = true;
+            panelSupport3.Visible = true;
             cbbKhachHang.Visible = true;
             txtTenKhachHang.Visible = false;
             ResetDialog();
@@ -693,6 +694,18 @@ namespace BanHangCayCanh
         {
             this.Hide();
             new FormBaoCao(1).Show();
+        }
+
+        private void SetEditable(bool value)
+        {
+            panelSupport.Enabled = value;
+            panelSupport1.Enabled = value;
+            panelSupport2.Enabled = value;
+            panelSupport3.Enabled = value;
+            panelSupport4.Enabled = value;
+            panelSupport5.Enabled = value;
+            btnCapNhat.Enabled = value;
+            btnResetFormHoaDon.Enabled = value;
         }
     }
 }
